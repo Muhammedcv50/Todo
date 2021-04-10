@@ -1,0 +1,43 @@
+body{
+    background-size: cover;
+}
+
+.but {
+    text-align: center;
+}
+
+.but button {
+    position: absolute;
+    padding: 1%;
+    font-size: 30px;
+    font-weight: 500;
+    top: 43%;
+    left: 42%;
+    
+    color: antiquewhite;
+    border-color: antiquewhite;
+    background-color:orangered;
+    border-width: 0.2ex ;
+    border-radius: 25px;
+}
+
+.but button:hover {
+   
+    background-color:chocolate;
+    border-color:;
+}
+
+.frm
+{
+    width: 50%;
+    position: fixed;
+    left: 25%;
+    top: 25%;
+    background-color: white ;
+    padding: 1%;
+    border-radius: 15%;
+    padding: 2%;
+}
+.frm input{
+    border-radius: 10%;
+}
