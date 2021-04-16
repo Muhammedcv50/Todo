@@ -146,3 +146,10 @@ body{
     to {bottom: 0; opacity: 0;}
 }
 
+#todotable{
+    width: 65%;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 20%;
+    text-align: center;
+  }
