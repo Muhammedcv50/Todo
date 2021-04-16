@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TodoApp</title>
+    <link rel="icon" href="../images/icon.jpeg" type="image">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+ setTimeout(function(){ 
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000);
+       }, 500)
+    });
+</script>
+
+
+
+
+  </head>
+<body background="../images/back.jpg">
+
+     <!-- Header -->  
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+        <div class="container-fluid" class='head'>
+          <img src="./images/icon.jpeg" height=60px alt="logo">
+  
+          <a class="navbar-brand" href="#">Welcome to TodoApp   </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" class='head'>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="todo.html">Todo List</a>
+              </li>
+  
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"  class="nav-link" href="login.html">Logout</a>
+            </li>
+          
+  
+              
+              </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
+        <!-- End of Header -->
+
+      <div class="intro">
+         
+          
+        <h1>Why TodoApp</h1>
+        <ul>
+            <li> Organizing your tasks with a list can make everything much more manageable and make you feel grounded.</li>
+            <li>Seeing a clear outline of your completed and uncompleted tasks will help you feel organized and stay mentally focused.</li>
+            <li>Having a list of all your tasks will allow you to sit down and make a plan</li>
+            <li>To-do lists are a useful external memory aid that give you permission to forget.</li>
+            <li>Every time you look at a list, it reinforces the information in your short-term memory, making it much less likely that you will forget an appointment or commitment</li>
+            <li>Students are often encouraged to use lists as study aids to increase retention of facts.</li>
+            <li>So, start making your to-do lists today. You'll soon be less stressed, more organized and find yourself with more time in the day than you ever realized you had!</li>
+        
+        </ul>
+        <img src="../images/pngegg.png" alt="" height=210px>
+    </div>
+
+    <div id="snackbar">Redirected using callback</div>
+    
+</body>
+</html>
