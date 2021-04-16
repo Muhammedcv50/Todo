@@ -1,5 +1,5 @@
-window.onload = ajax();
-function ajax(){
+window.onload = ajx();
+function ajx(){
 
     //XMLHTTP request object
     var xhttp = new XMLHttpRequest();
@@ -14,10 +14,10 @@ function ajax(){
                 output += "<td>"+ response[i].id +"</td>";
                 output += "<td>"+ response[i].title +"</td>";
                 if(response[i].completed == false){
-                    output += "<th>"+ "<input type =\"checkbox\" id="+i+" onclick = \"checkbox_check("+i+");\">" + "</input>" + "</th>"; 
+                    output += "<td>"+ "<input type =\"checkbox\" id="+i+" onclick = \"check("+i+");\">" + "</input>" + "</td>"; 
                 }
                 else{
-                    output += "<th>" + "<input type =\"checkbox\" checked disabled>" + "</input>" + "</th>"; 
+                    output += "<td>" + "<input type =\"checkbox\" checked disabled>" + "</input>" + "</td>"; 
                 }
                 output += "</tr>";
                 document.getElementById("tabdata").innerHTML = output;
@@ -28,7 +28,7 @@ function ajax(){
 }
 
 var count = 0;
-function checkbox_check(t){
+function check(t){
     var checkbox = document.getElementById(t);
     var promise = new Promise(function(resolve,reject){
         if(checkbox.checked == true){
